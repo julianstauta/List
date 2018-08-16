@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Diligencie el siguiente formulario"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Escriba su nombre" />
+
+        <EditText
+            android:id="@+id/et_addres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Lugar de residencia" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/but_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Atras" />
+
+            <Button
+                android:id="@+id/but_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enviar" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@drawable/LogoIcesi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escoja el genero musical preferido" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rock" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pop" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salsa" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rap" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+</ScrollView>
